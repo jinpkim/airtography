@@ -1,0 +1,87 @@
+﻿빌드 시작: 2013-04-12 오전 10:29:09
+     1>2 노드의 "C:\Documents and Settings\dv6000\My Documents\Visual Studio 2010\Projects\jdksmidi\jdksmidi\jdksmidi.vcxproj" 프로젝트(build 대상)입니다.
+     1>InitializeBuildStatus:
+         "AlwaysCreate"이(가) 지정되었기 때문에 "Debug\jdksmidi.unsuccessfulbuild"을(를) 만들고 있습니다.
+       ClCompile:
+         C:\Program Files\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt create_midi.cpp jdksmidi_advancedsequencer.cpp jdksmidi_driver.cpp jdksmidi_driverdump.cpp jdksmidi_edittrack.cpp jdksmidi_file.cpp jdksmidi_fileread.cpp jdksmidi_filereadmultitrack.cpp jdksmidi_fileshow.cpp jdksmidi_filewrite.cpp jdksmidi_filewritemultitrack.cpp jdksmidi_keysig.cpp jdksmidi_manager.cpp jdksmidi_matrix.cpp jdksmidi_midi.cpp jdksmidi_msg.cpp jdksmidi_multitrack.cpp jdksmidi_parser.cpp jdksmidi_process.cpp jdksmidi_queue.cpp jdksmidi_sequencer.cpp jdksmidi_showcontrol.cpp jdksmidi_showcontrolhandler.cpp jdksmidi_smpte.cpp jdksmidi_sysex.cpp jdksmidi_tempo.cpp jdksmidi_tick.cpp jdksmidi_track.cpp jdksmidi_utils.cpp
+         jdksmidi_utils.cpp
+         jdksmidi_track.cpp
+         jdksmidi_tick.cpp
+         jdksmidi_tempo.cpp
+         jdksmidi_sysex.cpp
+         jdksmidi_smpte.cpp
+         jdksmidi_showcontrolhandler.cpp
+         jdksmidi_showcontrol.cpp
+         jdksmidi_sequencer.cpp
+         jdksmidi_queue.cpp
+         jdksmidi_process.cpp
+         jdksmidi_parser.cpp
+         jdksmidi_multitrack.cpp
+         jdksmidi_msg.cpp
+         jdksmidi_midi.cpp
+         jdksmidi_matrix.cpp
+         jdksmidi_manager.cpp
+         jdksmidi_keysig.cpp
+         jdksmidi_filewritemultitrack.cpp
+         jdksmidi_filewrite.cpp
+         코드를 생성하고 있습니다...
+         컴파일하고 있습니다...
+         jdksmidi_fileshow.cpp
+         jdksmidi_filereadmultitrack.cpp
+         jdksmidi_fileread.cpp
+         jdksmidi_file.cpp
+         jdksmidi_edittrack.cpp
+         jdksmidi_driverdump.cpp
+         jdksmidi_driver.cpp
+         jdksmidi_advancedsequencer.cpp
+         create_midi.cpp
+         코드를 생성하고 있습니다...
+       ManifestResourceCompile:
+         C:\Program Files\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /nologo /fo"Debug\jdksmidi.exe.embed.manifest.res" Debug\jdksmidi_manifest.rc 
+       Link:
+         C:\Program Files\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Documents and Settings\dv6000\My Documents\Visual Studio 2010\Projects\jdksmidi\Debug\jdksmidi.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\jdksmidi.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Documents and Settings\dv6000\My Documents\Visual Studio 2010\Projects\jdksmidi\Debug\jdksmidi.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Documents and Settings\dv6000\My Documents\Visual Studio 2010\Projects\jdksmidi\Debug\jdksmidi.lib" /MACHINE:X86 Debug\jdksmidi.exe.embed.manifest.res
+         Debug\create_midi.obj
+         Debug\jdksmidi_advancedsequencer.obj
+         Debug\jdksmidi_driver.obj
+         Debug\jdksmidi_driverdump.obj
+         Debug\jdksmidi_edittrack.obj
+         Debug\jdksmidi_file.obj
+         Debug\jdksmidi_fileread.obj
+         Debug\jdksmidi_filereadmultitrack.obj
+         Debug\jdksmidi_fileshow.obj
+         Debug\jdksmidi_filewrite.obj
+         Debug\jdksmidi_filewritemultitrack.obj
+         Debug\jdksmidi_keysig.obj
+         Debug\jdksmidi_manager.obj
+         Debug\jdksmidi_matrix.obj
+         Debug\jdksmidi_midi.obj
+         Debug\jdksmidi_msg.obj
+         Debug\jdksmidi_multitrack.obj
+         Debug\jdksmidi_parser.obj
+         Debug\jdksmidi_process.obj
+         Debug\jdksmidi_queue.obj
+         Debug\jdksmidi_sequencer.obj
+         Debug\jdksmidi_showcontrol.obj
+         Debug\jdksmidi_showcontrolhandler.obj
+         Debug\jdksmidi_smpte.obj
+         Debug\jdksmidi_sysex.obj
+         Debug\jdksmidi_tempo.obj
+         Debug\jdksmidi_tick.obj
+         Debug\jdksmidi_track.obj
+         Debug\jdksmidi_utils.obj
+         LINK : C:\Documents and Settings\dv6000\My Documents\Visual Studio 2010\Projects\jdksmidi\Debug\jdksmidi.exe을(를) 찾을 수 없거나 마지막 증분 링크에 의해 빌드되지 않았습니다. 전체 링크를 수행하고 있습니다.
+            C:\Documents and Settings\dv6000\My Documents\Visual Studio 2010\Projects\jdksmidi\Debug\jdksmidi.lib 라이브러리 및 C:\Documents and Settings\dv6000\My Documents\Visual Studio 2010\Projects\jdksmidi\Debug\jdksmidi.exp 개체를 생성하고 있습니다.
+       Manifest:
+         C:\Program Files\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /out:"Debug\jdksmidi.exe.embed.manifest" /manifest Debug\jdksmidi.exe.intermediate.manifest
+         모든 출력이 최신 상태입니다.
+       LinkEmbedManifest:
+         모든 출력이 최신 상태입니다.
+         jdksmidi.vcxproj -> C:\Documents and Settings\dv6000\My Documents\Visual Studio 2010\Projects\jdksmidi\Debug\jdksmidi.exe
+       FinalizeBuildStatus:
+         "Debug\jdksmidi.unsuccessfulbuild" 파일을 삭제하고 있습니다.
+         "Debug\jdksmidi.lastbuildstate"에 연결(touching)하고 있습니다.
+     1>"C:\Documents and Settings\dv6000\My Documents\Visual Studio 2010\Projects\jdksmidi\jdksmidi\jdksmidi.vcxproj" 프로젝트를 빌드했습니다(build 대상).
+
+빌드했습니다.
+
+경과 시간: 00:00:30.67
