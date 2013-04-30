@@ -85,6 +85,18 @@ long RSAEncrypter::expX_modN(long X, long exp, long N){
 	return tmp;
 }
 
+int RSAEncrypter::expX_modN(int X, int exp, int N){
+	int tmp=1;
+	while(exp!=0){
+		while(exp%2 ==0){
+			exp = exp/2;
+			X = (X*X)%N;
+		};
+		exp--;
+		tmp = (tmp*X)%N;
+	}
+	return tmp;
+}
 
 void RSAEncrypter::PrepareRSA(int p, int q, long publicKey){
 	m_p = p;
@@ -101,4 +113,20 @@ char* RSAEncrypter::Encrypt(char* val){
 
 char* RSAEncrypter::Decrypt(char* val){
 	return 0;
+}
+
+int* RSAEncrypter::Encrypt(int* val, int size){
+	for (int i = 0; i < size; ++i) {
+		val[i] = expX_modN((int)val[i], (int)m_publicKey, (int)RSAEncrypter::m_N());
+	}
+
+	return val;
+}
+
+int* RSAEncrypter::Decrypt(int* val, int size){
+	for (int i = 0; i < size; ++i) {
+		val[i] = expX_modN((int)val[i], (int)m_extededEuclid, (int)RSAEncrypter::m_N());
+	}
+
+	return val;
 }
