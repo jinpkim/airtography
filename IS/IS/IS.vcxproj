@@ -103,6 +103,7 @@
     <ClCompile Include="jdksmidi_tick.cpp" />
     <ClCompile Include="jdksmidi_track.cpp" />
     <ClCompile Include="jdksmidi_utils.cpp" />
+    <ClCompile Include="RSAEncrypter.cpp" />
     <ClCompile Include="WordtoInt.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -125,6 +126,7 @@
     <ClInclude Include="parser.h" />
     <ClInclude Include="process.h" />
     <ClInclude Include="queue.h" />
+    <ClInclude Include="RSAEncrypter.h" />
     <ClInclude Include="sequencer.h" />
     <ClInclude Include="showcontrol.h" />
     <ClInclude Include="showcontrolhandler.h" />
