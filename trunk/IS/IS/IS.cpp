@@ -12,6 +12,7 @@
 using namespace jdksmidi;
 
 #include "WordtoInt.h"
+#include "RSAEncrypter.h"
 #include <iostream>
 
 
@@ -24,16 +25,23 @@ int main()
 	int ret=0;
 	char* input = new char();
 	WordInt* wti = new WordInt();
+	RSAEncrypter* rsa = new RSAEncrypter();
 	//Beep(200,50);
 	
-
 
 	cout << "Type Message : ";
 	cin.getline(input,'\\n');
 	wti->Converter(input);
-	wti->printArray(wti->intArray);
-	wti->~WordInt();
+	//wti->printArray(wti->intArray);
+
+	//publick key : 53, private key : 53
+	rsa->PrepareRSA(3, 37, 53);
+	wti->intArray = rsa->Encrypt(wti->intArray, wti->size);
+	//wti->intArray = rsa->Decrypt(wti->intArray, wti->size);
+
+
 	ret = WriteMidi(wti);
+	wti->~WordInt();
 	return 0;
 }
 
@@ -75,7 +83,6 @@ int WriteMidi(WordInt* wti)
     tracks.GetTrack( trk )->PutTextEvent(t, META_TRACK_NAME, "0day");
 
     // create cannal midi events and add them to a track 1
-
     trk = 1;
 
     // META_TRACK_NAME text in tracks >= 1 Sibelius uses as instrument name (left of staves)
