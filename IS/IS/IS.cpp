@@ -23,7 +23,7 @@ int WriteMidi(WordInt* wti);
 int main()
 {
 	int ret=0;
-	char* input = new char();
+	char* input = new char[256];
 	WordInt* wti = new WordInt();
 	RSAEncrypter* rsa = new RSAEncrypter();
 	//Beep(200,50);
