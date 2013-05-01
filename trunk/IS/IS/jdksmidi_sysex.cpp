@@ -86,7 +86,9 @@ MIDISystemExclusive::~MIDISystemExclusive()
 
     if ( deletable )
     {
-        jdks_safe_delete_array( buf );
+        //jdks_safe_delete_array( buf );
+		delete [] buf;
+		buf = 0;
     }
 }
 
