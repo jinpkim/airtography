@@ -11,8 +11,13 @@ int main(array<System::String ^> ^args)
 	// 컨트롤이 만들어지기 전에 Windows XP 시각 효과를 활성화합니다.
 	Application::EnableVisualStyles();
 	Application::SetCompatibleTextRenderingDefault(false); 
-
+	
 	// 주 창을 만들어 실행합니다.
 	Application::Run(gcnew Form1());
+
+	string str = this->textBox1 ->Text ;
+
+	printf("%s", str);
+
 	return 0;
 }
