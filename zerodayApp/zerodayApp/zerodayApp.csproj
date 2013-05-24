@@ -76,6 +76,80 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="advancedsequencer.h" />
+    <Content Include="driver.h" />
+    <Content Include="driverdump.h" />
+    <Content Include="edittrack.h" />
+    <Content Include="EUCLID.CPP" />
+    <Content Include="EUCLID.H" />
+    <Content Include="file.h" />
+    <Content Include="fileread.h" />
+    <Content Include="filereadmultitrack.h" />
+    <Content Include="fileshow.h" />
+    <Content Include="filewrite.h" />
+    <Content Include="filewritemultitrack.h" />
+    <Content Include="IS.cpp" />
+    <Content Include="jdksmidi_advancedsequencer.cpp" />
+    <Content Include="jdksmidi_driver.cpp" />
+    <Content Include="jdksmidi_driverdump.cpp" />
+    <Content Include="jdksmidi_edittrack.cpp" />
+    <Content Include="jdksmidi_file.cpp" />
+    <Content Include="jdksmidi_fileread.cpp" />
+    <Content Include="jdksmidi_filereadmultitrack.cpp" />
+    <Content Include="jdksmidi_fileshow.cpp" />
+    <Content Include="jdksmidi_filewrite.cpp" />
+    <Content Include="jdksmidi_filewritemultitrack.cpp" />
+    <Content Include="jdksmidi_keysig.cpp" />
+    <Content Include="jdksmidi_manager.cpp" />
+    <Content Include="jdksmidi_matrix.cpp" />
+    <Content Include="jdksmidi_midi.cpp" />
+    <Content Include="jdksmidi_msg.cpp" />
+    <Content Include="jdksmidi_multitrack.cpp" />
+    <Content Include="jdksmidi_parser.cpp" />
+    <Content Include="jdksmidi_process.cpp" />
+    <Content Include="jdksmidi_queue.cpp" />
+    <Content Include="jdksmidi_sequencer.cpp" />
+    <Content Include="jdksmidi_showcontrol.cpp" />
+    <Content Include="jdksmidi_showcontrolhandler.cpp" />
+    <Content Include="jdksmidi_smpte.cpp" />
+    <Content Include="jdksmidi_sysex.cpp" />
+    <Content Include="jdksmidi_tempo.cpp" />
+    <Content Include="jdksmidi_tick.cpp" />
+    <Content Include="jdksmidi_track.cpp" />
+    <Content Include="jdksmidi_utils.cpp" />
+    <Content Include="keysig.h" />
+    <Content Include="manager.h" />
+    <Content Include="match_table.txt" />
+    <Content Include="matrix.h" />
+    <Content Include="midi.h" />
+    <Content Include="MPUINT.CPP" />
+    <Content Include="MPUINT.H" />
+    <Content Include="msg.h" />
+    <Content Include="multitrack.h" />
+    <Content Include="parser.h" />
+    <Content Include="process.h" />
+    <Content Include="queue.h" />
+    <Content Include="RANDOM.CPP" />
+    <Content Include="RANDOM.H" />
+    <Content Include="RSA.CPP" />
+    <Content Include="RSA.H" />
+    <Content Include="RSAEncrypter.cpp" />
+    <Content Include="RSAEncrypter.h" />
+    <Content Include="sequencer.h" />
+    <Content Include="showcontrol.h" />
+    <Content Include="showcontrolhandler.h" />
+    <Content Include="smpte.h" />
+    <Content Include="song.h" />
+    <Content Include="sysex.h" />
+    <Content Include="tempo.h" />
+    <Content Include="tick.h" />
+    <Content Include="track.h" />
+    <Content Include="utils.h" />
+    <Content Include="WordtoInt.cpp" />
+    <Content Include="WordtoInt.h" />
+    <Content Include="world.h" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

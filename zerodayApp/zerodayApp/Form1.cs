@@ -27,7 +27,7 @@ namespace zerodayApp
         {
             InitializeComponent();
             textBox1.Text = "C:/Users/term/바탕화면/test1";
-            textBox2.Text = "인코딩할 문자를 입력하세요";
+            //textBox2.Text = "인코딩할 문자를 입력하세요";
             //textBox3.Text = "인코딩 파일을 저장할 폴더를 선택하세요";
             textBox4.Text = "디코딩할 파일을 선택하세요";
             selected = "C:/Users/term/바탕화면/test1";      //default <- 본인 컴퓨터에 맞게 변경
@@ -74,9 +74,11 @@ namespace zerodayApp
 
         private void button2_Click_1(object sender, EventArgs e)
         {
-            /*Encoding button 누르면 dll로 text2.Text 보내서 
-                        selected 디렉토리에 미디파일 저장!! 
-           */
+            System.Diagnostics.Process.Start("D:\\air\\zerodayApp\\zerodayApp\\IS.exe", textBox2.Text);
+            //System.Diagnostics.Process.Start("C:\\Windows\\notepad.exe");
+
+
+
         }
 
     }
