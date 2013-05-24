@@ -77,18 +77,6 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="advancedsequencer.h" />
-    <Content Include="driver.h" />
-    <Content Include="driverdump.h" />
-    <Content Include="edittrack.h" />
-    <Content Include="EUCLID.CPP" />
-    <Content Include="EUCLID.H" />
-    <Content Include="file.h" />
-    <Content Include="fileread.h" />
-    <Content Include="filereadmultitrack.h" />
-    <Content Include="fileshow.h" />
-    <Content Include="filewrite.h" />
-    <Content Include="filewritemultitrack.h" />
     <Content Include="IS.cpp" />
     <Content Include="jdksmidi_advancedsequencer.cpp" />
     <Content Include="jdksmidi_driver.cpp" />

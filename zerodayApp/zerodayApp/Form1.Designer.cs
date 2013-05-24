@@ -66,6 +66,7 @@
             // 
             // tabPage1
             // 
+            this.tabPage1.BackColor = System.Drawing.Color.White;
             this.tabPage1.Controls.Add(this.label6);
             this.tabPage1.Controls.Add(this.label5);
             this.tabPage1.Controls.Add(this.button1);
@@ -80,7 +81,6 @@
             this.tabPage1.Size = new System.Drawing.Size(438, 278);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Encoding";
-            this.tabPage1.UseVisualStyleBackColor = true;
             // 
             // label6
             // 
@@ -134,7 +134,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("굴림", 9F);
-            this.label2.Location = new System.Drawing.Point(30, 65);
+            this.label2.Location = new System.Drawing.Point(46, 72);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(34, 12);
             this.label2.TabIndex = 4;
@@ -143,7 +143,7 @@
             // textBox2
             // 
             this.textBox2.Font = new System.Drawing.Font("굴림", 9F);
-            this.textBox2.Location = new System.Drawing.Point(70, 62);
+            this.textBox2.Location = new System.Drawing.Point(86, 69);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(170, 21);
             this.textBox2.TabIndex = 3;
@@ -179,7 +179,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("굴림", 9F);
-            this.label7.Location = new System.Drawing.Point(22, 30);
+            this.label7.Location = new System.Drawing.Point(24, 26);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(254, 12);
             this.label7.TabIndex = 8;
@@ -205,7 +205,7 @@
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(162, 128);
+            this.button4.Location = new System.Drawing.Point(178, 127);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(94, 51);
             this.button4.TabIndex = 5;
@@ -226,7 +226,7 @@
             // textBox3
             // 
             this.textBox3.Font = new System.Drawing.Font("굴림", 9F);
-            this.textBox3.Location = new System.Drawing.Point(105, 227);
+            this.textBox3.Location = new System.Drawing.Point(112, 231);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(200, 21);
             this.textBox3.TabIndex = 3;
@@ -235,11 +235,12 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("굴림", 9F);
-            this.label3.Location = new System.Drawing.Point(21, 230);
+            this.label3.Location = new System.Drawing.Point(23, 232);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(72, 12);
             this.label3.TabIndex = 4;
             this.label3.Text = "•The result:";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // Form1
             // 
