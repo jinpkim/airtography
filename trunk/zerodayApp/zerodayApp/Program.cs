@@ -3,8 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Windows.Forms;
 
+using zerodayApp;
+
 namespace zerodayApp
 {
+
+
     static class Program
     {
         /// <summary>
@@ -15,7 +19,14 @@ namespace zerodayApp
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+
             Application.Run(new Form1());
+            
+
         }
+
     }
+
+    
+
 }
