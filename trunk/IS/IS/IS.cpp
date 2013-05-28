@@ -30,6 +30,13 @@ int main(int argc, char** argv)
 	char* concat = new char[256];
 	//cout << "Type Message : ";
 	//cin.getline(input,'\\n');
+
+	//no input argument -> exit
+	if (argc < 2) {
+		cout << "Should input command argument\n(project properties -> debugging -> command arguments)\n";
+		return 1;
+	}
+
 	input = argv[1];
 	strcpy(concat, argv[2]);
 	strcat(concat, (3<argc) ? " " : "");
