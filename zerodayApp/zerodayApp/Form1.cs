@@ -16,6 +16,9 @@ namespace zerodayApp
         //DirectoryInfo dirInfo2;
         //DirectoryInfo dirInfo_CG;
         //DirectoryInfo dirInfo_REAL;
+        private string ExportFilePath = Path.GetDirectoryName(Application.ExecutablePath) + "\\IS.exe"; 
+
+
 
         string selected;
         string openstrFilename = null;
@@ -29,7 +32,7 @@ namespace zerodayApp
             textBox1.Text = "C:";
            // textBox2.Text = "Input the string you want to ENCRYPT";
            // textBox3.Text = "인코딩 파일을 저장할 폴더를 선택하세요";
-            textBox4.Text = "Choose the file you want to DECRYPT";
+            //textBox4.Text = "Choose the file you want to DECRYPT";
             selected = "C:";      //default <- 본인 컴퓨터에 맞게 변경
         }
 
@@ -77,7 +80,7 @@ namespace zerodayApp
         private void button2_Click_1(object sender, EventArgs e)
         {
             string arg = string.Concat(textBox2.Text, " ", textBox1.Text);
-            System.Diagnostics.Process.Start("C:\\Documents and Settings\\dv6000\\My Documents\\Visual Studio 2010\\Projects\\IS\\zerodayApp\\zerodayApp\\IS.exe", arg);
+            System.Diagnostics.Process.Start(ExportFilePath, arg);
             MessageBox.Show("COMPLETE", "RESULT");
         }
 
