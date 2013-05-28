@@ -18,19 +18,28 @@ using namespace jdksmidi;
 
 using namespace std;
 
-int WriteMidi(WordInt* wti);
+int WriteMidi(WordInt* wti, char* filepath);
 
-int main()
+int main(int argc, char** argv)
 {
 	int ret=0;
 	char* input = new char[256];
 	WordInt* wti = new WordInt();
 	RSAEncrypter* rsa = new RSAEncrypter();
 	//Beep(200,50);
-	
+	char* concat = new char[256];
+	//cout << "Type Message : ";
+	//cin.getline(input,'\\n');
+	input = argv[1];
+	strcpy(concat, argv[2]);
+	strcat(concat, (3<argc) ? " " : "");
+	if(argc > 3) {
+		for(int i=3;i<argc;i++) {
+			strcat(concat, argv[i]);
+			strcat(concat, (i<argc-1) ? " " : "");
+		}
+	}
 
-	cout << "Type Message : ";
-	cin.getline(input,'\\n');
 	wti->Converter(input);
 	//wti->printArray(wti->intArray);
 
@@ -40,12 +49,12 @@ int main()
 	//wti->intArray = rsa->Decrypt(wti->intArray, wti->size);
 
 
-	ret = WriteMidi(wti);
+	ret = WriteMidi(wti, concat);
 	wti->~WordInt();
 	return 0;
 }
 
-int WriteMidi(WordInt* wti)
+int WriteMidi(WordInt* wti, char* filepath)
 {
 	int return_code = -1;
 
@@ -116,8 +125,8 @@ int WriteMidi(WordInt* wti)
     // m.SetNoteOn( chan, note, 0 );
 		tracks.GetTrack( trk )->PutEvent( m );
 	}
-
-	const char *outfile_name = "create_midifile.mid";
+	const char *outfile_name = strcat(filepath,"\\junkmidifile.mid");
+	//printf("%s\n", outfile_name);
     MIDIFileWriteStreamFileName out_stream( outfile_name );
 
     // then output the stream like my example does, except setting num_tracks to match your data
@@ -142,6 +151,5 @@ int WriteMidi(WordInt* wti)
     {
         cerr << "\nError opening file " << outfile_name << endl;
     }
-	system("pause");
     return return_code;
 }
