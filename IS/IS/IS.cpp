@@ -33,8 +33,8 @@ int main(int argc, char** argv)
 	//cin.getline(input,'\\n');
 
 	//no input argument -> exit
-	if (argc < 2) {
-		cout << "Should input command argument\n(project properties -> debugging -> command arguments)\n";
+	if (argc < 3) {
+		cout << "Should input command argument\n(project properties -> debugging -> command arguments)\nex)hello world e:\\\\temp\n";
 		return 1;
 	}
 
