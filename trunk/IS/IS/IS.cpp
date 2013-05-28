@@ -19,6 +19,7 @@ using namespace jdksmidi;
 using namespace std;
 
 int WriteMidi(WordInt* wti, char* filepath);
+void ConcateArgvStr(int argc, char* argv[], char* input, char* filepath);
 
 int main(int argc, char** argv)
 {
@@ -37,15 +38,7 @@ int main(int argc, char** argv)
 		return 1;
 	}
 
-	input = argv[1];
-	strcpy(concat, argv[2]);
-	strcat(concat, (3<argc) ? " " : "");
-	if(argc > 3) {
-		for(int i=3;i<argc;i++) {
-			strcat(concat, argv[i]);
-			strcat(concat, (i<argc-1) ? " " : "");
-		}
-	}
+	ConcateArgvStr(argc, argv, input, concat);
 
 	wti->Converter(input);
 	//wti->printArray(wti->intArray);
@@ -59,6 +52,25 @@ int main(int argc, char** argv)
 	ret = WriteMidi(wti, concat);
 	wti->~WordInt();
 	return 0;
+}
+
+//last argv is filepath
+void ConcateArgvStr(int argc, char* argv[], char* input, char* filepath)
+{
+	int i = 1;
+
+	strcpy(input, argv[1]);
+	do {
+		if (++i >= argc - 1) {
+			break;
+		}
+		strcat(input, " ");
+		strcat(input, argv[i]);
+	}
+	while (i < argc - 1);
+	strcpy(filepath, argv[i]);
+
+	return;
 }
 
 int WriteMidi(WordInt* wti, char* filepath)
