@@ -26,11 +26,11 @@ namespace zerodayApp
         public Form1()
         {
             InitializeComponent();
-            textBox1.Text = "C:/Users/term/바탕화면/test1";
-            //textBox2.Text = "인코딩할 문자를 입력하세요";
-            //textBox3.Text = "인코딩 파일을 저장할 폴더를 선택하세요";
-            textBox4.Text = "디코딩할 파일을 선택하세요";
-            selected = "C:/Users/term/바탕화면/test1";      //default <- 본인 컴퓨터에 맞게 변경
+            textBox1.Text = "C:";
+           // textBox2.Text = "Input the string you want to ENCRYPT";
+           // textBox3.Text = "인코딩 파일을 저장할 폴더를 선택하세요";
+            textBox4.Text = "Choose the file you want to DECRYPT";
+            selected = "C:";      //default <- 본인 컴퓨터에 맞게 변경
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -54,6 +54,8 @@ namespace zerodayApp
         private void button3_Click(object sender, EventArgs e)
         {
             OpenFileDialog openfile = new OpenFileDialog();
+            openfile.Filter = "MIDI File (*.mid)|*.mid";
+            openfile.Title = "Select a MIDI File";
             if (openfile.ShowDialog() == DialogResult.OK)
             {
                 openstrFilename = openfile.FileName;     //경로 
@@ -74,14 +76,33 @@ namespace zerodayApp
 
         private void button2_Click_1(object sender, EventArgs e)
         {
-            System.Diagnostics.Process.Start("D:\\air\\zerodayApp\\zerodayApp\\IS.exe", textBox2.Text);
-            //System.Diagnostics.Process.Start("C:\\Windows\\notepad.exe");
-
-
-
+            string arg = string.Concat(textBox2.Text, " ", textBox1.Text);
+            System.Diagnostics.Process.Start("C:\\Documents and Settings\\dv6000\\My Documents\\Visual Studio 2010\\Projects\\IS\\zerodayApp\\zerodayApp\\IS.exe", arg);
+            MessageBox.Show("COMPLETE", "RESULT");
         }
 
         private void label3_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+
+        private void textBox3_TextChanged(object sender, EventArgs e)
         {
 
         }
