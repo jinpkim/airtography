@@ -24,7 +24,6 @@ int* WordInt::Converter(std::string str)
 	}
 	WordInt::intArray = arr;
 	return arr;
-	
 }
 
 int WordInt::Match(char c)

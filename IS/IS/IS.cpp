@@ -14,9 +14,15 @@ using namespace jdksmidi;
 #include "WordtoInt.h"
 #include "RSAEncrypter.h"
 #include <iostream>
-
+#include "RSA.H"
+#include "MPUINT.H"
 
 using namespace std;
+
+const unsigned int MAX_MPUINT_LEN = 32;
+const char *rsa_d = "3944468182306490129890668128064166282888079664881759058485822932535889194050612552881100935547024572480766043979477430280352683150981569778761095649256861";
+const char *rsa_e = "2059401299394647702106117656899229530707170303380700778668875719255199099359609820845614887146444406353484725021121780926979946947620426792867529081508741";
+const char *rsa_n = "5976422441365186438016701355398741256152489884652994504696330715375530622839572107040284724219589165254936455575947087089199768690286896908774443748874051";
 
 int WriteMidi(WordInt* wti, char* filepath);
 void ConcateArgvStr(int argc, char* argv[], char* input, char* filepath);
@@ -28,7 +34,7 @@ int main(int argc, char** argv)
 	WordInt* wti = new WordInt();
 	RSAEncrypter* rsa = new RSAEncrypter();
 	//Beep(200,50);
-	char* concat = new char[256];
+	char* filepath = new char[256];
 	//cout << "Type Message : ";
 	//cin.getline(input,'\\n');
 
@@ -38,8 +44,35 @@ int main(int argc, char** argv)
 		return 1;
 	}
 
-	ConcateArgvStr(argc, argv, input, concat);
+	ConcateArgvStr(argc, argv, input, filepath);
 
+	mpuint result(MAX_MPUINT_LEN), source(MAX_MPUINT_LEN);
+	mpuint d(MAX_MPUINT_LEN), e(MAX_MPUINT_LEN), n(MAX_MPUINT_LEN);
+		
+	const char *tex = "123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890";
+	source.scan(tex);
+	printf("%s\n", tex);
+	char *c = new char[512];
+	printf("%s\n", source.edit(c));
+	
+	e.scan(rsa_e);
+	n.scan(rsa_n);
+	d.scan(rsa_d);
+
+	/*d = 8;
+	GenerateKeys(d, e, n);*/
+	
+	EncryptDecrypt(result, source, d, n);
+	printf("d : %s\n", d.edit(c));
+	printf("e : %s\n", e.edit(c));
+	printf("n : %s\n", n.edit(c));
+	printf("source : %s\n", source.edit(c));
+	printf("result : %s\n", result.edit(c));
+	EncryptDecrypt(source, result, e, n);
+
+	printf("%s\n", source.edit(c));
+
+	
 	wti->Converter(input);
 	//wti->printArray(wti->intArray);
 
@@ -49,7 +82,7 @@ int main(int argc, char** argv)
 	//wti->intArray = rsa->Decrypt(wti->intArray, wti->size);
 
 
-	ret = WriteMidi(wti, concat);
+	ret = WriteMidi(wti, filepath);
 	wti->~WordInt();
 	return 0;
 }
