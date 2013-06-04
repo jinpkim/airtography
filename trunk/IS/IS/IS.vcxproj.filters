@@ -18,9 +18,6 @@
     <ClCompile Include="IS.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="WordtoInt.cpp">
-      <Filter>헤더 파일</Filter>
-    </ClCompile>
     <ClCompile Include="jdksmidi_advancedsequencer.cpp">
       <Filter>헤더 파일</Filter>
     </ClCompile>
@@ -106,6 +103,21 @@
       <Filter>헤더 파일</Filter>
     </ClCompile>
     <ClCompile Include="RSAEncrypter.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="WordtoInt.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="MPUINT.CPP">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="EUCLID.CPP">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="RANDOM.CPP">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="RSA.CPP">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
@@ -204,6 +216,18 @@
       <Filter>헤더 파일</Filter>
     </ClInclude>
     <ClInclude Include="RSAEncrypter.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="MPUINT.H">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="EUCLID.H">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="RANDOM.H">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="RSA.H">
       <Filter>헤더 파일</Filter>
     </ClInclude>
   </ItemGroup>

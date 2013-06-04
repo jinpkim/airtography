@@ -1,7 +1,7 @@
 #ifndef H__MPUINT
 #define H__MPUINT
 
-extern void numeric_overflow(void);
+extern inline void numeric_overflow(void) {throw "MPUINT numeric_overflow exception"; return;};
 
 class mpuint
 {

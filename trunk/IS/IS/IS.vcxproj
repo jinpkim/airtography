@@ -74,6 +74,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="EUCLID.CPP" />
     <ClCompile Include="IS.cpp" />
     <ClCompile Include="jdksmidi_advancedsequencer.cpp" />
     <ClCompile Include="jdksmidi_driver.cpp" />
@@ -103,6 +104,9 @@
     <ClCompile Include="jdksmidi_tick.cpp" />
     <ClCompile Include="jdksmidi_track.cpp" />
     <ClCompile Include="jdksmidi_utils.cpp" />
+    <ClCompile Include="MPUINT.CPP" />
+    <ClCompile Include="RANDOM.CPP" />
+    <ClCompile Include="RSA.CPP" />
     <ClCompile Include="RSAEncrypter.cpp" />
     <ClCompile Include="WordtoInt.cpp" />
   </ItemGroup>
@@ -111,6 +115,7 @@
     <ClInclude Include="driver.h" />
     <ClInclude Include="driverdump.h" />
     <ClInclude Include="edittrack.h" />
+    <ClInclude Include="EUCLID.H" />
     <ClInclude Include="file.h" />
     <ClInclude Include="fileread.h" />
     <ClInclude Include="filereadmultitrack.h" />
@@ -121,11 +126,14 @@
     <ClInclude Include="manager.h" />
     <ClInclude Include="matrix.h" />
     <ClInclude Include="midi.h" />
+    <ClInclude Include="MPUINT.H" />
     <ClInclude Include="msg.h" />
     <ClInclude Include="multitrack.h" />
     <ClInclude Include="parser.h" />
     <ClInclude Include="process.h" />
     <ClInclude Include="queue.h" />
+    <ClInclude Include="RANDOM.H" />
+    <ClInclude Include="RSA.H" />
     <ClInclude Include="RSAEncrypter.h" />
     <ClInclude Include="sequencer.h" />
     <ClInclude Include="showcontrol.h" />
