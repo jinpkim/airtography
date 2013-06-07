@@ -1,5 +1,6 @@
 #include "WordtoInt.h"
 
+
 WordInt::WordInt()
 {
 	std::cout << "WordInt Object is made" << std::endl;
@@ -47,4 +48,45 @@ void WordInt::printArray(int* a)
 	{
 		std::cout << a[i] << std::endl;
 	}
+}
+
+// make string to mpuint, char_len is output
+mpuint WordInt::GetMpuint(std::string c, int int_len, int *char_len)
+{
+	int clen = c.length();
+	*char_len = clen;
+	mpuint ret(int_len);
+	ret = 0;
+	
+	for (int i = 0; i < clen; ++i)
+	{
+		//3자리수 단위로 char값이 숫자 형태로 들어감
+		ret *= 1000;
+		ret += (int)c[i];
+	}
+
+	return ret;
+}
+
+// convert mpuint to int*(this can conver to midi)
+int* WordInt::Converter(mpuint in, int charlen)
+{
+	int *out;
+	mpuint t_mpu = in;
+	int size = (charlen*3)/2;
+	size += charlen%2 == 0 ? 0 : 1;
+	out = new int[size];
+
+	//mpuint 형태의 큰 integer를 2자리수 단위로 끊어서 int[]에 넣는다.
+	for (int i = 0; i < size; ++i) {
+		t_mpu = in;
+		t_mpu %= 100;
+		in /= 100;
+		out[size-1-i] = t_mpu.value[0];
+	}
+
+	this->intArray = out;
+	this->size = charlen;
+
+	return out;
 }

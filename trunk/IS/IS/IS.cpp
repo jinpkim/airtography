@@ -29,7 +29,9 @@ void ConcateArgvStr(int argc, char* argv[], char* input, char* filepath);
 
 int main(int argc, char** argv)
 {
-	int ret=0;
+	int ret=0, input_len = 0;
+	mpuint result(MAX_MPUINT_LEN), source(MAX_MPUINT_LEN);
+	mpuint d(MAX_MPUINT_LEN), e(MAX_MPUINT_LEN), n(MAX_MPUINT_LEN);
 	char* input = new char[256];
 	WordInt* wti = new WordInt();
 	RSAEncrypter* rsa = new RSAEncrypter();
@@ -46,15 +48,8 @@ int main(int argc, char** argv)
 
 	ConcateArgvStr(argc, argv, input, filepath);
 
-	mpuint result(MAX_MPUINT_LEN), source(MAX_MPUINT_LEN);
-	mpuint d(MAX_MPUINT_LEN), e(MAX_MPUINT_LEN), n(MAX_MPUINT_LEN);
-		
-	const char *tex = "123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890";
-	source.scan(tex);
-	printf("%s\n", tex);
+
 	char *c = new char[512];
-	printf("%s\n", source.edit(c));
-	
 	e.scan(rsa_e);
 	n.scan(rsa_n);
 	d.scan(rsa_d);
@@ -62,23 +57,19 @@ int main(int argc, char** argv)
 	/*d = 8;
 	GenerateKeys(d, e, n);*/
 	
-	EncryptDecrypt(result, source, d, n);
-	printf("d : %s\n", d.edit(c));
-	printf("e : %s\n", e.edit(c));
-	printf("n : %s\n", n.edit(c));
-	printf("source : %s\n", source.edit(c));
-	printf("result : %s\n", result.edit(c));
-	EncryptDecrypt(source, result, e, n);
+	//EncryptDecrypt(result, source, d, n); //encrypt
+	//EncryptDecrypt(source, result, e, n);	//decrypt
 
-	printf("%s\n", source.edit(c));
-
+	mpuint mpuinput = wti->GetMpuint(input, MAX_MPUINT_LEN, &input_len);
+	EncryptDecrypt(result, mpuinput, e, n);
+	wti->Converter(result, input_len);
 	
-	wti->Converter(input);
+	//wti->Converter(input);
 	//wti->printArray(wti->intArray);
 
 	//publick key : 53, private key : 53
-	rsa->PrepareRSA(3, 37, 53);
-	wti->intArray = rsa->Encrypt(wti->intArray, wti->size);
+	//rsa->PrepareRSA(3, 37, 53);
+	//wti->intArray = rsa->Encrypt(wti->intArray, wti->size);
 	//wti->intArray = rsa->Decrypt(wti->intArray, wti->size);
 
 
