@@ -61,7 +61,7 @@ int main(int argc, char** argv)
 	//EncryptDecrypt(source, result, e, n);	//decrypt
 
 	mpuint mpuinput = wti->GetMpuint(input, MAX_MPUINT_LEN, &input_len);
-	EncryptDecrypt(result, mpuinput, e, n);
+	EncryptDecrypt(result, mpuinput, d, n);
 	wti->Converter(result, input_len);
 	
 	//wti->Converter(input);
