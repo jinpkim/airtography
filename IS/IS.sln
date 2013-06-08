@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "IS", "IS\IS.vcxproj", "{B1E09237-A654-4282-B40E-33C0178B3015}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "IS_Decrypter", "IS_Decrypter\IS_Decrypter.vcxproj", "{BA67A56D-8BA6-4AA6-BD29-2B884C5C8D1C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -13,6 +15,10 @@ Global
 		{B1E09237-A654-4282-B40E-33C0178B3015}.Debug|Win32.Build.0 = Debug|Win32
 		{B1E09237-A654-4282-B40E-33C0178B3015}.Release|Win32.ActiveCfg = Release|Win32
 		{B1E09237-A654-4282-B40E-33C0178B3015}.Release|Win32.Build.0 = Release|Win32
+		{BA67A56D-8BA6-4AA6-BD29-2B884C5C8D1C}.Debug|Win32.ActiveCfg = Debug|Win32
+		{BA67A56D-8BA6-4AA6-BD29-2B884C5C8D1C}.Debug|Win32.Build.0 = Debug|Win32
+		{BA67A56D-8BA6-4AA6-BD29-2B884C5C8D1C}.Release|Win32.ActiveCfg = Release|Win32
+		{BA67A56D-8BA6-4AA6-BD29-2B884C5C8D1C}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
