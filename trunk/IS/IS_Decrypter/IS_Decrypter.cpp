@@ -22,7 +22,7 @@ int main(int argc, char *argv[])
 	100단위, 1000단위로 데이터를 끊어서 처리하는 부분이므로 이부분만 적당히 거꾸로 구현하면 될듯
 */
 
-	decode.process();
+	//decode.process();
     decode.results(); 
 
   	return 0;
