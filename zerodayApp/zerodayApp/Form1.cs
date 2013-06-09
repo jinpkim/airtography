@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using System.IO;
+using System.Diagnostics;
 
 namespace zerodayApp
 {
@@ -16,7 +17,11 @@ namespace zerodayApp
         //DirectoryInfo dirInfo2;
         //DirectoryInfo dirInfo_CG;
         //DirectoryInfo dirInfo_REAL;
-        private string ExportFilePath = Path.GetDirectoryName(Application.ExecutablePath) + "\\IS.exe"; 
+        private string ExportFilePath = Path.GetDirectoryName(Application.ExecutablePath) + "\\IS.exe";
+        private string ExportFilePath2 = Path.GetDirectoryName(Application.ExecutablePath) + "\\playsmf.exe";
+        private string ExportFilePath3 = Path.GetDirectoryName(Application.ExecutablePath) + "\\smftoxml.exe";
+        private string ExportFilePath4 = Path.GetDirectoryName(Application.ExecutablePath) + "\\IS_Decrypter.exe";
+        private string ExportFilePath5 = Path.GetDirectoryName(Application.ExecutablePath) + "\\output.xml"; 
 
 
 
@@ -29,11 +34,11 @@ namespace zerodayApp
         public Form1()
         {
             InitializeComponent();
-            textBox1.Text = "C:";
+            textBox1.Text = "C:\\";
            // textBox2.Text = "Input the string you want to ENCRYPT";
            // textBox3.Text = "인코딩 파일을 저장할 폴더를 선택하세요";
             //textBox4.Text = "Choose the file you want to DECRYPT";
-            selected = "C:";      //default <- 본인 컴퓨터에 맞게 변경
+            selected = "C:\\";      //default <- 본인 컴퓨터에 맞게 변경
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -71,6 +76,21 @@ namespace zerodayApp
 
         private void button4_Click_1(object sender, EventArgs e)
         {
+            ProcessStartInfo abc = new ProcessStartInfo(ExportFilePath3, openstrFilename);
+            ProcessStartInfo abc2 = new ProcessStartInfo(ExportFilePath4, "output.xml");
+            abc.RedirectStandardOutput = true;
+            abc.UseShellExecute = false;
+            abc.WindowStyle = ProcessWindowStyle.Hidden;
+            abc2.WindowStyle = ProcessWindowStyle.Hidden;
+            Process pXML = new Process();
+            pXML.StartInfo = abc;
+            pXML.Start();
+            String outputxml = "";
+            outputxml = pXML.StandardOutput.ReadToEnd();
+            System.IO.File.WriteAllText(ExportFilePath5, outputxml);
+            //System.Diagnostics.Process.Start(abc);
+            System.Diagnostics.Process.Start(abc2);
+            MessageBox.Show("COMPLETE", "RESULT");
 
             /*Decoding button 누르면 encoding_data를 처리하여
               textBox3.Text에 출력한다!! 
@@ -80,8 +100,11 @@ namespace zerodayApp
         private void button2_Click_1(object sender, EventArgs e)
         {
             string arg = string.Concat(textBox2.Text, " ", textBox1.Text);
-            System.Diagnostics.Process.Start(ExportFilePath, arg);
+            ProcessStartInfo abc = new ProcessStartInfo(ExportFilePath, arg);
+            abc.WindowStyle = ProcessWindowStyle.Hidden;
+            System.Diagnostics.Process.Start(abc);
             MessageBox.Show("COMPLETE", "RESULT");
+            btnPlay.Enabled = true;
         }
 
         private void label3_Click(object sender, EventArgs e)
@@ -108,6 +131,15 @@ namespace zerodayApp
         private void textBox3_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnPlay_Click(object sender, EventArgs e)
+        {
+            //System.Diagnostics.Process.Start(ExportFilePath2, selected + "junkmidifile.mid");
+            ProcessStartInfo abc = new ProcessStartInfo(ExportFilePath2, selected + "junkmidifile.mid");
+            abc.WindowStyle = ProcessWindowStyle.Hidden;
+            System.Diagnostics.Process.Start(abc);
+            
         }
 
     }
