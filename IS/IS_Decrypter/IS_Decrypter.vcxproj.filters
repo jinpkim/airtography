@@ -27,6 +27,24 @@
     <ClInclude Include="midi.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="..\IS\EUCLID.H">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\IS\MPUINT.H">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\IS\RANDOM.H">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\IS\RSA.H">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\IS\RSAEncrypter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\IS\WordtoInt.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
@@ -36,6 +54,24 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="midi.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\IS\RANDOM.CPP">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\IS\RSA.CPP">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\IS\RSAEncrypter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\IS\WordtoInt.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\IS\EUCLID.CPP">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\IS\MPUINT.CPP">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

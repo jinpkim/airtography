@@ -81,7 +81,7 @@ namespace zerodayApp
             abc.RedirectStandardOutput = true;
             abc.UseShellExecute = false;
             abc.WindowStyle = ProcessWindowStyle.Hidden;
-            abc2.WindowStyle = ProcessWindowStyle.Hidden;
+            //abc2.WindowStyle = ProcessWindowStyle.Hidden;
             Process pXML = new Process();
             pXML.StartInfo = abc;
             pXML.Start();

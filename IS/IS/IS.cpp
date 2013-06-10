@@ -62,7 +62,9 @@ int main(int argc, char** argv)
 
 	mpuint mpuinput = wti->GetMpuint(input, MAX_MPUINT_LEN, &input_len);
 	EncryptDecrypt(result, mpuinput, d, n);
-	wti->Converter(result, input_len);
+	cout << result.edit(c) << endl;
+	std::string str = c;
+	wti->Converter(result);
 	
 	//wti->Converter(input);
 	//wti->printArray(wti->intArray);

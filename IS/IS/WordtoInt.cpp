@@ -68,13 +68,34 @@ mpuint WordInt::GetMpuint(std::string c, int int_len, int *char_len)
 	return ret;
 }
 
+// make string to mpuint, char_len is output
+std::string WordInt::mpuintToString(mpuint in)
+{
+	int ti = 0;
+	std::string ret = "";
+	mpuint temp = in;
+
+	while(in > 0)
+	{
+		temp = in;
+		temp %= 1000;
+		in /= 1000;
+		ti = temp.value[0];
+		ret += (char)ti;
+	}
+	
+	std::reverse(ret.begin(), ret.end());
+	return ret;
+}
+
+
 // convert mpuint to int*(this can conver to midi)
-int* WordInt::Converter(mpuint in, int charlen)
+int* WordInt::Converter(mpuint in)
 {
 	int *out;
 	mpuint t_mpu = in;
-	int size = (charlen*3)/2;
-	size += charlen%2 == 0 ? 0 : 1;
+	int size = WordInt::sizeOfMpuintToIntArr(in)/2;
+	size += WordInt::sizeOfMpuintToIntArr(in)%2 == 0 ? 0 : 1;
 	out = new int[size];
 
 	//mpuint 형태의 큰 integer를 2자리수 단위로 끊어서 int[]에 넣는다.
@@ -86,7 +107,32 @@ int* WordInt::Converter(mpuint in, int charlen)
 	}
 
 	this->intArray = out;
-	this->size = charlen;
+	this->size = size;
 
 	return out;
+}
+
+mpuint WordInt::ReConverter(int* in, int size, int mpusize)
+{
+	mpuint ret(mpusize);
+	ret = in[0];
+
+	for (int i = 1; i < size; ++i)
+	{
+		ret *= 100;
+		ret += in[i];
+
+		char c[256];
+		ret.edit(c);
+	}
+
+	return ret;
+}
+
+int WordInt::sizeOfMpuintToIntArr(mpuint in)
+{
+	char c[512];
+	std::string str = in.edit(c);
+
+	return str.length();
 }
