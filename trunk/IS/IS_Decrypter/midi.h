@@ -26,6 +26,8 @@ public:
     void parsexml(string);  
 	void process();
     void results();
+	int* ConvertToIntA();
+	inline int GetInputSize () {return decode.size();};
 	midi();
 	~midi(void);
 }; 

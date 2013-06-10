@@ -77,11 +77,23 @@
     <None Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\IS\EUCLID.H" />
+    <ClInclude Include="..\IS\MPUINT.H" />
+    <ClInclude Include="..\IS\RANDOM.H" />
+    <ClInclude Include="..\IS\RSA.H" />
+    <ClInclude Include="..\IS\RSAEncrypter.h" />
+    <ClInclude Include="..\IS\WordtoInt.h" />
     <ClInclude Include="midi.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="..\IS\EUCLID.CPP" />
+    <ClCompile Include="..\IS\MPUINT.CPP" />
+    <ClCompile Include="..\IS\RANDOM.CPP" />
+    <ClCompile Include="..\IS\RSA.CPP" />
+    <ClCompile Include="..\IS\RSAEncrypter.cpp" />
+    <ClCompile Include="..\IS\WordtoInt.cpp" />
     <ClCompile Include="IS_Decrypter.cpp" />
     <ClCompile Include="midi.cpp" />
     <ClCompile Include="stdafx.cpp" />
