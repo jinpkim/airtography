@@ -76,7 +76,7 @@ namespace zerodayApp
 
         private void button4_Click_1(object sender, EventArgs e)
         {
-            ProcessStartInfo abc = new ProcessStartInfo(ExportFilePath3, openstrFilename);
+            ProcessStartInfo abc = new ProcessStartInfo(ExportFilePath3, convertFilePathForCmd(openstrFilename));
             ProcessStartInfo abc2 = new ProcessStartInfo(ExportFilePath4, "output.xml");
             abc.RedirectStandardOutput = true;
             abc.UseShellExecute = false;
@@ -99,7 +99,7 @@ namespace zerodayApp
 
         private void button2_Click_1(object sender, EventArgs e)
         {
-            string arg = string.Concat(textBox2.Text, " ", textBox1.Text);
+            string arg = string.Concat(textBox2.Text, " ", convertFilePathForCmd(selected));
             ProcessStartInfo abc = new ProcessStartInfo(ExportFilePath, arg);
             abc.WindowStyle = ProcessWindowStyle.Hidden;
             System.Diagnostics.Process.Start(abc);
@@ -136,10 +136,17 @@ namespace zerodayApp
         private void btnPlay_Click(object sender, EventArgs e)
         {
             //System.Diagnostics.Process.Start(ExportFilePath2, selected + "junkmidifile.mid");
-            ProcessStartInfo abc = new ProcessStartInfo(ExportFilePath2, selected + "junkmidifile.mid");
+
+            string filepath = convertFilePathForCmd((selected[selected.Length - 1] == '\\' ? selected : selected + '\\') + "junkmidifile.mid");
+            ProcessStartInfo abc = new ProcessStartInfo(ExportFilePath2, filepath);
             abc.WindowStyle = ProcessWindowStyle.Hidden;
             System.Diagnostics.Process.Start(abc);
             
+        }
+
+        private static string convertFilePathForCmd(string input)
+        {
+            return "\"" + input + "\"";
         }
 
     }
