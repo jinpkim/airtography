@@ -78,32 +78,42 @@ namespace zerodayApp
         {
             ProcessStartInfo abc = new ProcessStartInfo(ExportFilePath3, convertFilePathForCmd(openstrFilename));
             ProcessStartInfo abc2 = new ProcessStartInfo(ExportFilePath4, "output.xml");
+
             abc.RedirectStandardOutput = true;
             abc.UseShellExecute = false;
             abc.WindowStyle = ProcessWindowStyle.Hidden;
-            //abc2.WindowStyle = ProcessWindowStyle.Hidden;
+            abc.CreateNoWindow = true;
             Process pXML = new Process();
             pXML.StartInfo = abc;
             pXML.Start();
             String outputxml = "";
             outputxml = pXML.StandardOutput.ReadToEnd();
             System.IO.File.WriteAllText(ExportFilePath5, outputxml);
-            //System.Diagnostics.Process.Start(abc);
-            System.Diagnostics.Process.Start(abc2);
-            MessageBox.Show("COMPLETE", "RESULT");
+            //pXML.Close();
 
-            /*Decoding button 누르면 encoding_data를 처리하여
-              textBox3.Text에 출력한다!! 
-            */
+            abc2.UseShellExecute = false;
+            abc2.WindowStyle = ProcessWindowStyle.Hidden;
+            abc2.RedirectStandardOutput = true;
+            abc2.CreateNoWindow = true;
+            Process pDecode = new Process();
+            pDecode.StartInfo = abc2;
+            pDecode.Start();
+            String outputDecode = pDecode.StandardOutput.ReadToEnd();
+            textBox3.Text = outputDecode;
+            //pDecode.Close();
+            MessageBox.Show("COMPLETE", "RESULT");
         }
 
         private void button2_Click_1(object sender, EventArgs e)
         {
+            Process pISEncrypt = new Process();
             string arg = string.Concat(textBox2.Text, " ", convertFilePathForCmd(selected));
             ProcessStartInfo abc = new ProcessStartInfo(ExportFilePath, arg);
             abc.WindowStyle = ProcessWindowStyle.Hidden;
-            System.Diagnostics.Process.Start(abc);
+            pISEncrypt.StartInfo = abc;
+            pISEncrypt.Start();
             MessageBox.Show("COMPLETE", "RESULT");
+            pISEncrypt.Close();
             btnPlay.Enabled = true;
         }
 
@@ -135,13 +145,13 @@ namespace zerodayApp
 
         private void btnPlay_Click(object sender, EventArgs e)
         {
-            //System.Diagnostics.Process.Start(ExportFilePath2, selected + "junkmidifile.mid");
-
+            Process pPlay = new Process();
             string filepath = convertFilePathForCmd((selected[selected.Length - 1] == '\\' ? selected : selected + '\\') + "junkmidifile.mid");
             ProcessStartInfo abc = new ProcessStartInfo(ExportFilePath2, filepath);
             abc.WindowStyle = ProcessWindowStyle.Hidden;
-            System.Diagnostics.Process.Start(abc);
-            
+            pPlay.StartInfo = abc;
+            pPlay.Start();
+            pPlay.Close();
         }
 
         private static string convertFilePathForCmd(string input)
