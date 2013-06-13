@@ -53,8 +53,6 @@ namespace zerodayApp
             if (dialog.ShowDialog() == DialogResult.OK)
             {
                 selected = dialog.SelectedPath;
-                Directory.SetCurrentDirectory(selected);
-                dirInfo1 = new DirectoryInfo(Directory.GetCurrentDirectory());
                 textBox1.Text = selected;
             }
         }
@@ -89,7 +87,7 @@ namespace zerodayApp
             String outputxml = "";
             outputxml = pXML.StandardOutput.ReadToEnd();
             System.IO.File.WriteAllText(ExportFilePath5, outputxml);
-            //pXML.Close();
+            pXML.Close();
 
             abc2.UseShellExecute = false;
             abc2.WindowStyle = ProcessWindowStyle.Hidden;
@@ -100,7 +98,7 @@ namespace zerodayApp
             pDecode.Start();
             String outputDecode = pDecode.StandardOutput.ReadToEnd();
             textBox3.Text = outputDecode;
-            //pDecode.Close();
+            pDecode.Close();
             MessageBox.Show("COMPLETE", "RESULT");
         }
 
