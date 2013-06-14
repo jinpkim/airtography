@@ -105,7 +105,7 @@ namespace zerodayApp
         private void button2_Click_1(object sender, EventArgs e)
         {
             Process pISEncrypt = new Process();
-            string arg = string.Concat(textBox2.Text, " ", convertFilePathForCmd(selected));
+            string arg = string.Concat(textBox2.Text, " ", convertFilePathForCmd(selected[selected.Length-1] == '\\' ? selected.Substring(0, selected.Length-1) : selected));
             ProcessStartInfo abc = new ProcessStartInfo(ExportFilePath, arg);
             abc.WindowStyle = ProcessWindowStyle.Hidden;
             pISEncrypt.StartInfo = abc;
@@ -156,6 +156,5 @@ namespace zerodayApp
         {
             return "\"" + input + "\"";
         }
-
     }
 }
