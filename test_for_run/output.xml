@@ -1,0 +1,244 @@
+<?xml version="1.0"?>
+<MidiFile DivisionType="PPQ" Resolution="100">
+	<Track EndTick="0">
+		<MetaEvent Tick="0" Number="88" DataLength="4" Data="04 02 18 08"/>
+		<MetaEvent Tick="0" Number="81" DataLength="3" Data="0F 42 40"/>
+		<MetaEvent Tick="0" Number="3" DataLength="4" Data="30 64 61 79"/>
+	</Track>
+	<Track EndTick="1540">
+		<MetaEvent Tick="0" Number="3" DataLength="12" Data="43 68 75 72 63 68 20 4F 72 67 61 6E"/>
+		<ControlChangeEvent Tick="0" Channel="0" Number="10" Value="0"/>
+		<ProgramChangeEvent Tick="0" Channel="0" Number="19"/>
+		<NoteOnEvent Tick="0" Channel="0" Note="37" Velocity="100"/>
+		<MetaEvent Tick="0" Number="5" DataLength="6" Data="43 65 6E 74 72 65"/>
+		<NoteOffEvent Tick="20" Channel="0" Note="37" Velocity="100"/>
+		<NoteOnEvent Tick="20" Channel="0" Note="3" Velocity="100"/>
+		<MetaEvent Tick="20" Number="5" DataLength="6" Data="43 65 6E 74 72 65"/>
+		<NoteOffEvent Tick="40" Channel="0" Note="3" Velocity="100"/>
+		<NoteOnEvent Tick="40" Channel="0" Note="26" Velocity="100"/>
+		<MetaEvent Tick="40" Number="5" DataLength="6" Data="43 65 6E 74 72 65"/>
+		<NoteOffEvent Tick="60" Channel="0" Note="26" Velocity="100"/>
+		<NoteOnEvent Tick="60" Channel="0" Note="47" Velocity="100"/>
+		<MetaEvent Tick="60" Number="5" DataLength="6" Data="43 65 6E 74 72 65"/>
+		<NoteOffEvent Tick="80" Channel="0" Note="47" Velocity="100"/>
+		<NoteOnEvent Tick="80" Channel="0" Note="59" Velocity="100"/>
+		<MetaEvent Tick="80" Number="5" DataLength="6" Data="43 65 6E 74 72 65"/>
+		<NoteOffEvent Tick="100" Channel="0" Note="59" Velocity="100"/>
+		<NoteOnEvent Tick="100" Channel="0" Note="17" Velocity="100"/>
+		<MetaEvent Tick="100" Number="5" DataLength="6" Data="43 65 6E 74 72 65"/>
+		<NoteOffEvent Tick="120" Channel="0" Note="17" Velocity="100"/>
+		<NoteOnEvent Tick="120" Channel="0" Note="82" Velocity="100"/>
+		<MetaEvent Tick="120" Number="5" DataLength="6" Data="43 65 6E 74 72 65"/>
+		<NoteOffEvent Tick="140" Channel="0" Note="82" Velocity="100"/>
+		<NoteOnEvent Tick="140" Channel="0" Note="52" Velocity="100"/>
+		<MetaEvent Tick="140" Number="5" DataLength="6" Data="43 65 6E 74 72 65"/>
+		<NoteOffEvent Tick="160" Channel="0" Note="52" Velocity="100"/>
+		<NoteOnEvent Tick="160" Channel="0" Note="84" Velocity="100"/>
+		<MetaEvent Tick="160" Number="5" DataLength="6" Data="43 65 6E 74 72 65"/>
+		<NoteOffEvent Tick="180" Channel="0" Note="84" Velocity="100"/>
+		<NoteOnEvent Tick="180" Channel="0" Note="17" Velocity="100"/>
+		<MetaEvent Tick="180" Number="5" DataLength="6" Data="43 65 6E 74 72 65"/>
+		<NoteOffEvent Tick="200" Channel="0" Note="17" Velocity="100"/>
+		<NoteOnEvent Tick="200" Channel="0" Note="44" Velocity="100"/>
+		<MetaEvent Tick="200" Number="5" DataLength="6" Data="43 65 6E 74 72 65"/>
+		<NoteOffEvent Tick="220" Channel="0" Note="44" Velocity="100"/>
+		<NoteOnEvent Tick="220" Channel="0" Note="36" Velocity="100"/>
+		<MetaEvent Tick="220" Number="5" DataLength="6" Data="43 65 6E 74 72 65"/>
+		<NoteOffEvent Tick="240" Channel="0" Note="36" Velocity="100"/>
+		<NoteOnEvent Tick="240" Channel="0" Note="7" Velocity="100"/>
+		<MetaEvent Tick="240" Number="5" DataLength="6" Data="43 65 6E 74 72 65"/>
+		<NoteOffEvent Tick="260" Channel="0" Note="7" Velocity="100"/>
+		<NoteOnEvent Tick="260" Channel="0" Note="87" Velocity="100"/>
+		<MetaEvent Tick="260" Number="5" DataLength="6" Data="43 65 6E 74 72 65"/>
+		<NoteOffEvent Tick="280" Channel="0" Note="87" Velocity="100"/>
+		<NoteOnEvent Tick="280" Channel="0" Note="61" Velocity="100"/>
+		<MetaEvent Tick="280" Number="5" DataLength="6" Data="43 65 6E 74 72 65"/>
+		<NoteOffEvent Tick="300" Channel="0" Note="61" Velocity="100"/>
+		<NoteOnEvent Tick="300" Channel="0" Note="25" Velocity="100"/>
+		<MetaEvent Tick="300" Number="5" DataLength="6" Data="43 65 6E 74 72 65"/>
+		<NoteOffEvent Tick="320" Channel="0" Note="25" Velocity="100"/>
+		<NoteOnEvent Tick="320" Channel="0" Note="42" Velocity="100"/>
+		<MetaEvent Tick="320" Number="5" DataLength="6" Data="43 65 6E 74 72 65"/>
+		<NoteOffEvent Tick="340" Channel="0" Note="42" Velocity="100"/>
+		<NoteOnEvent Tick="340" Channel="0" Note="83" Velocity="100"/>
+		<MetaEvent Tick="340" Number="5" DataLength="6" Data="43 65 6E 74 72 65"/>
+		<NoteOffEvent Tick="360" Channel="0" Note="83" Velocity="100"/>
+		<NoteOnEvent Tick="360" Channel="0" Note="53" Velocity="100"/>
+		<MetaEvent Tick="360" Number="5" DataLength="6" Data="43 65 6E 74 72 65"/>
+		<NoteOffEvent Tick="380" Channel="0" Note="53" Velocity="100"/>
+		<NoteOnEvent Tick="380" Channel="0" Note="87" Velocity="100"/>
+		<MetaEvent Tick="380" Number="5" DataLength="6" Data="43 65 6E 74 72 65"/>
+		<NoteOffEvent Tick="400" Channel="0" Note="87" Velocity="100"/>
+		<NoteOnEvent Tick="400" Channel="0" Note="55" Velocity="100"/>
+		<MetaEvent Tick="400" Number="5" DataLength="6" Data="43 65 6E 74 72 65"/>
+		<NoteOffEvent Tick="420" Channel="0" Note="55" Velocity="100"/>
+		<NoteOnEvent Tick="420" Channel="0" Note="10" Velocity="100"/>
+		<MetaEvent Tick="420" Number="5" DataLength="6" Data="43 65 6E 74 72 65"/>
+		<NoteOffEvent Tick="440" Channel="0" Note="10" Velocity="100"/>
+		<NoteOnEvent Tick="440" Channel="0" Note="10" Velocity="100"/>
+		<MetaEvent Tick="440" Number="5" DataLength="6" Data="43 65 6E 74 72 65"/>
+		<NoteOffEvent Tick="460" Channel="0" Note="10" Velocity="100"/>
+		<NoteOnEvent Tick="460" Channel="0" Note="86" Velocity="100"/>
+		<MetaEvent Tick="460" Number="5" DataLength="6" Data="43 65 6E 74 72 65"/>
+		<NoteOffEvent Tick="480" Channel="0" Note="86" Velocity="100"/>
+		<NoteOnEvent Tick="480" Channel="0" Note="12" Velocity="100"/>
+		<MetaEvent Tick="480" Number="5" DataLength="6" Data="43 65 6E 74 72 65"/>
+		<NoteOffEvent Tick="500" Channel="0" Note="12" Velocity="100"/>
+		<NoteOnEvent Tick="500" Channel="0" Note="83" Velocity="100"/>
+		<MetaEvent Tick="500" Number="5" DataLength="6" Data="43 65 6E 74 72 65"/>
+		<NoteOffEvent Tick="520" Channel="0" Note="83" Velocity="100"/>
+		<NoteOnEvent Tick="520" Channel="0" Note="29" Velocity="100"/>
+		<MetaEvent Tick="520" Number="5" DataLength="6" Data="43 65 6E 74 72 65"/>
+		<NoteOffEvent Tick="540" Channel="0" Note="29" Velocity="100"/>
+		<NoteOnEvent Tick="540" Channel="0" Note="69" Velocity="100"/>
+		<MetaEvent Tick="540" Number="5" DataLength="6" Data="43 65 6E 74 72 65"/>
+		<NoteOffEvent Tick="560" Channel="0" Note="69" Velocity="100"/>
+		<NoteOnEvent Tick="560" Channel="0" Note="17" Velocity="100"/>
+		<MetaEvent Tick="560" Number="5" DataLength="6" Data="43 65 6E 74 72 65"/>
+		<NoteOffEvent Tick="580" Channel="0" Note="17" Velocity="100"/>
+		<NoteOnEvent Tick="580" Channel="0" Note="38" Velocity="100"/>
+		<MetaEvent Tick="580" Number="5" DataLength="6" Data="43 65 6E 74 72 65"/>
+		<NoteOffEvent Tick="600" Channel="0" Note="38" Velocity="100"/>
+		<NoteOnEvent Tick="600" Channel="0" Note="21" Velocity="100"/>
+		<MetaEvent Tick="600" Number="5" DataLength="6" Data="43 65 6E 74 72 65"/>
+		<NoteOffEvent Tick="620" Channel="0" Note="21" Velocity="100"/>
+		<NoteOnEvent Tick="620" Channel="0" Note="93" Velocity="100"/>
+		<MetaEvent Tick="620" Number="5" DataLength="6" Data="43 65 6E 74 72 65"/>
+		<NoteOffEvent Tick="640" Channel="0" Note="93" Velocity="100"/>
+		<NoteOnEvent Tick="640" Channel="0" Note="24" Velocity="100"/>
+		<MetaEvent Tick="640" Number="5" DataLength="6" Data="43 65 6E 74 72 65"/>
+		<NoteOffEvent Tick="660" Channel="0" Note="24" Velocity="100"/>
+		<NoteOnEvent Tick="660" Channel="0" Note="85" Velocity="100"/>
+		<MetaEvent Tick="660" Number="5" DataLength="6" Data="43 65 6E 74 72 65"/>
+		<NoteOffEvent Tick="680" Channel="0" Note="85" Velocity="100"/>
+		<NoteOnEvent Tick="680" Channel="0" Note="75" Velocity="100"/>
+		<MetaEvent Tick="680" Number="5" DataLength="6" Data="43 65 6E 74 72 65"/>
+		<NoteOffEvent Tick="700" Channel="0" Note="75" Velocity="100"/>
+		<NoteOnEvent Tick="700" Channel="0" Note="53" Velocity="100"/>
+		<MetaEvent Tick="700" Number="5" DataLength="6" Data="43 65 6E 74 72 65"/>
+		<NoteOffEvent Tick="720" Channel="0" Note="53" Velocity="100"/>
+		<NoteOnEvent Tick="720" Channel="0" Note="80" Velocity="100"/>
+		<MetaEvent Tick="720" Number="5" DataLength="6" Data="43 65 6E 74 72 65"/>
+		<NoteOffEvent Tick="740" Channel="0" Note="80" Velocity="100"/>
+		<NoteOnEvent Tick="740" Channel="0" Note="85" Velocity="100"/>
+		<MetaEvent Tick="740" Number="5" DataLength="6" Data="43 65 6E 74 72 65"/>
+		<NoteOffEvent Tick="760" Channel="0" Note="85" Velocity="100"/>
+		<NoteOnEvent Tick="760" Channel="0" Note="63" Velocity="100"/>
+		<MetaEvent Tick="760" Number="5" DataLength="6" Data="43 65 6E 74 72 65"/>
+		<NoteOffEvent Tick="780" Channel="0" Note="63" Velocity="100"/>
+		<NoteOnEvent Tick="780" Channel="0" Note="93" Velocity="100"/>
+		<MetaEvent Tick="780" Number="5" DataLength="6" Data="43 65 6E 74 72 65"/>
+		<NoteOffEvent Tick="800" Channel="0" Note="93" Velocity="100"/>
+		<NoteOnEvent Tick="800" Channel="0" Note="27" Velocity="100"/>
+		<MetaEvent Tick="800" Number="5" DataLength="6" Data="43 65 6E 74 72 65"/>
+		<NoteOffEvent Tick="820" Channel="0" Note="27" Velocity="100"/>
+		<NoteOnEvent Tick="820" Channel="0" Note="61" Velocity="100"/>
+		<MetaEvent Tick="820" Number="5" DataLength="6" Data="43 65 6E 74 72 65"/>
+		<NoteOffEvent Tick="840" Channel="0" Note="61" Velocity="100"/>
+		<NoteOnEvent Tick="840" Channel="0" Note="15" Velocity="100"/>
+		<MetaEvent Tick="840" Number="5" DataLength="6" Data="43 65 6E 74 72 65"/>
+		<NoteOffEvent Tick="860" Channel="0" Note="15" Velocity="100"/>
+		<NoteOnEvent Tick="860" Channel="0" Note="37" Velocity="100"/>
+		<MetaEvent Tick="860" Number="5" DataLength="6" Data="43 65 6E 74 72 65"/>
+		<NoteOffEvent Tick="880" Channel="0" Note="37" Velocity="100"/>
+		<NoteOnEvent Tick="880" Channel="0" Note="41" Velocity="100"/>
+		<MetaEvent Tick="880" Number="5" DataLength="6" Data="43 65 6E 74 72 65"/>
+		<NoteOffEvent Tick="900" Channel="0" Note="41" Velocity="100"/>
+		<NoteOnEvent Tick="900" Channel="0" Note="23" Velocity="100"/>
+		<MetaEvent Tick="900" Number="5" DataLength="6" Data="43 65 6E 74 72 65"/>
+		<NoteOffEvent Tick="920" Channel="0" Note="23" Velocity="100"/>
+		<NoteOnEvent Tick="920" Channel="0" Note="66" Velocity="100"/>
+		<MetaEvent Tick="920" Number="5" DataLength="6" Data="43 65 6E 74 72 65"/>
+		<NoteOffEvent Tick="940" Channel="0" Note="66" Velocity="100"/>
+		<NoteOnEvent Tick="940" Channel="0" Note="73" Velocity="100"/>
+		<MetaEvent Tick="940" Number="5" DataLength="6" Data="43 65 6E 74 72 65"/>
+		<NoteOffEvent Tick="960" Channel="0" Note="73" Velocity="100"/>
+		<NoteOnEvent Tick="960" Channel="0" Note="97" Velocity="100"/>
+		<MetaEvent Tick="960" Number="5" DataLength="6" Data="43 65 6E 74 72 65"/>
+		<NoteOffEvent Tick="980" Channel="0" Note="97" Velocity="100"/>
+		<NoteOnEvent Tick="980" Channel="0" Note="67" Velocity="100"/>
+		<MetaEvent Tick="980" Number="5" DataLength="6" Data="43 65 6E 74 72 65"/>
+		<NoteOffEvent Tick="1000" Channel="0" Note="67" Velocity="100"/>
+		<NoteOnEvent Tick="1000" Channel="0" Note="43" Velocity="100"/>
+		<MetaEvent Tick="1000" Number="5" DataLength="6" Data="43 65 6E 74 72 65"/>
+		<NoteOffEvent Tick="1020" Channel="0" Note="43" Velocity="100"/>
+		<NoteOnEvent Tick="1020" Channel="0" Note="69" Velocity="100"/>
+		<MetaEvent Tick="1020" Number="5" DataLength="6" Data="43 65 6E 74 72 65"/>
+		<NoteOffEvent Tick="1040" Channel="0" Note="69" Velocity="100"/>
+		<NoteOnEvent Tick="1040" Channel="0" Note="11" Velocity="100"/>
+		<MetaEvent Tick="1040" Number="5" DataLength="6" Data="43 65 6E 74 72 65"/>
+		<NoteOffEvent Tick="1060" Channel="0" Note="11" Velocity="100"/>
+		<NoteOnEvent Tick="1060" Channel="0" Note="0" Velocity="100"/>
+		<MetaEvent Tick="1060" Number="5" DataLength="6" Data="43 65 6E 74 72 65"/>
+		<NoteOffEvent Tick="1080" Channel="0" Note="0" Velocity="100"/>
+		<NoteOnEvent Tick="1080" Channel="0" Note="43" Velocity="100"/>
+		<MetaEvent Tick="1080" Number="5" DataLength="6" Data="43 65 6E 74 72 65"/>
+		<NoteOffEvent Tick="1100" Channel="0" Note="43" Velocity="100"/>
+		<NoteOnEvent Tick="1100" Channel="0" Note="46" Velocity="100"/>
+		<MetaEvent Tick="1100" Number="5" DataLength="6" Data="43 65 6E 74 72 65"/>
+		<NoteOffEvent Tick="1120" Channel="0" Note="46" Velocity="100"/>
+		<NoteOnEvent Tick="1120" Channel="0" Note="34" Velocity="100"/>
+		<MetaEvent Tick="1120" Number="5" DataLength="6" Data="43 65 6E 74 72 65"/>
+		<NoteOffEvent Tick="1140" Channel="0" Note="34" Velocity="100"/>
+		<NoteOnEvent Tick="1140" Channel="0" Note="22" Velocity="100"/>
+		<MetaEvent Tick="1140" Number="5" DataLength="6" Data="43 65 6E 74 72 65"/>
+		<NoteOffEvent Tick="1160" Channel="0" Note="22" Velocity="100"/>
+		<NoteOnEvent Tick="1160" Channel="0" Note="80" Velocity="100"/>
+		<MetaEvent Tick="1160" Number="5" DataLength="6" Data="43 65 6E 74 72 65"/>
+		<NoteOffEvent Tick="1180" Channel="0" Note="80" Velocity="100"/>
+		<NoteOnEvent Tick="1180" Channel="0" Note="12" Velocity="100"/>
+		<MetaEvent Tick="1180" Number="5" DataLength="6" Data="43 65 6E 74 72 65"/>
+		<NoteOffEvent Tick="1200" Channel="0" Note="12" Velocity="100"/>
+		<NoteOnEvent Tick="1200" Channel="0" Note="3" Velocity="100"/>
+		<MetaEvent Tick="1200" Number="5" DataLength="6" Data="43 65 6E 74 72 65"/>
+		<NoteOffEvent Tick="1220" Channel="0" Note="3" Velocity="100"/>
+		<NoteOnEvent Tick="1220" Channel="0" Note="62" Velocity="100"/>
+		<MetaEvent Tick="1220" Number="5" DataLength="6" Data="43 65 6E 74 72 65"/>
+		<NoteOffEvent Tick="1240" Channel="0" Note="62" Velocity="100"/>
+		<NoteOnEvent Tick="1240" Channel="0" Note="72" Velocity="100"/>
+		<MetaEvent Tick="1240" Number="5" DataLength="6" Data="43 65 6E 74 72 65"/>
+		<NoteOffEvent Tick="1260" Channel="0" Note="72" Velocity="100"/>
+		<NoteOnEvent Tick="1260" Channel="0" Note="70" Velocity="100"/>
+		<MetaEvent Tick="1260" Number="5" DataLength="6" Data="43 65 6E 74 72 65"/>
+		<NoteOffEvent Tick="1280" Channel="0" Note="70" Velocity="100"/>
+		<NoteOnEvent Tick="1280" Channel="0" Note="87" Velocity="100"/>
+		<MetaEvent Tick="1280" Number="5" DataLength="6" Data="43 65 6E 74 72 65"/>
+		<NoteOffEvent Tick="1300" Channel="0" Note="87" Velocity="100"/>
+		<NoteOnEvent Tick="1300" Channel="0" Note="96" Velocity="100"/>
+		<MetaEvent Tick="1300" Number="5" DataLength="6" Data="43 65 6E 74 72 65"/>
+		<NoteOffEvent Tick="1320" Channel="0" Note="96" Velocity="100"/>
+		<NoteOnEvent Tick="1320" Channel="0" Note="12" Velocity="100"/>
+		<MetaEvent Tick="1320" Number="5" DataLength="6" Data="43 65 6E 74 72 65"/>
+		<NoteOffEvent Tick="1340" Channel="0" Note="12" Velocity="100"/>
+		<NoteOnEvent Tick="1340" Channel="0" Note="15" Velocity="100"/>
+		<MetaEvent Tick="1340" Number="5" DataLength="6" Data="43 65 6E 74 72 65"/>
+		<NoteOffEvent Tick="1360" Channel="0" Note="15" Velocity="100"/>
+		<NoteOnEvent Tick="1360" Channel="0" Note="67" Velocity="100"/>
+		<MetaEvent Tick="1360" Number="5" DataLength="6" Data="43 65 6E 74 72 65"/>
+		<NoteOffEvent Tick="1380" Channel="0" Note="67" Velocity="100"/>
+		<NoteOnEvent Tick="1380" Channel="0" Note="33" Velocity="100"/>
+		<MetaEvent Tick="1380" Number="5" DataLength="6" Data="43 65 6E 74 72 65"/>
+		<NoteOffEvent Tick="1400" Channel="0" Note="33" Velocity="100"/>
+		<NoteOnEvent Tick="1400" Channel="0" Note="96" Velocity="100"/>
+		<MetaEvent Tick="1400" Number="5" DataLength="6" Data="43 65 6E 74 72 65"/>
+		<NoteOffEvent Tick="1420" Channel="0" Note="96" Velocity="100"/>
+		<NoteOnEvent Tick="1420" Channel="0" Note="74" Velocity="100"/>
+		<MetaEvent Tick="1420" Number="5" DataLength="6" Data="43 65 6E 74 72 65"/>
+		<NoteOffEvent Tick="1440" Channel="0" Note="74" Velocity="100"/>
+		<NoteOnEvent Tick="1440" Channel="0" Note="46" Velocity="100"/>
+		<MetaEvent Tick="1440" Number="5" DataLength="6" Data="43 65 6E 74 72 65"/>
+		<NoteOffEvent Tick="1460" Channel="0" Note="46" Velocity="100"/>
+		<NoteOnEvent Tick="1460" Channel="0" Note="63" Velocity="100"/>
+		<MetaEvent Tick="1460" Number="5" DataLength="6" Data="43 65 6E 74 72 65"/>
+		<NoteOffEvent Tick="1480" Channel="0" Note="63" Velocity="100"/>
+		<NoteOnEvent Tick="1480" Channel="0" Note="15" Velocity="100"/>
+		<MetaEvent Tick="1480" Number="5" DataLength="6" Data="43 65 6E 74 72 65"/>
+		<NoteOffEvent Tick="1500" Channel="0" Note="15" Velocity="100"/>
+		<NoteOnEvent Tick="1500" Channel="0" Note="63" Velocity="100"/>
+		<MetaEvent Tick="1500" Number="5" DataLength="6" Data="43 65 6E 74 72 65"/>
+		<NoteOffEvent Tick="1520" Channel="0" Note="63" Velocity="100"/>
+		<NoteOnEvent Tick="1520" Channel="0" Note="60" Velocity="100"/>
+		<MetaEvent Tick="1520" Number="5" DataLength="6" Data="43 65 6E 74 72 65"/>
+		<NoteOffEvent Tick="1540" Channel="0" Note="60" Velocity="100"/>
+	</Track>
+</MidiFile>
